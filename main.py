@@ -1,29 +1,16 @@
-import os
-from PIL import Image
-from PIL.ExifTags import TAGS
-import shutil
+from scan_path import *
+from get_creation_date import *
 
-doc_ext = [".doc", ".docx", ".txt"]
-img_ext = [".png", ".jpeg", ".jpg", ".bmp"]
+#mypath=r"E:\My Files"
+#sf, doc_files, img_files, oth_files = scan_path(mypath)
 
-sort_path = input("Please place path which will be used to sort in: ")
-item_list = os.listdir(sort_path)
-
-for item in item_list:
-    file = sort_path +"\\"+item
-    if os.path.isdir(file):
-       os.mkdir(sort_path + "\\Folders")
-       shutil.move(file, sort_path + "\\Folders\\" + item)
-    if os.path.isfile(file)
-        #need to finish here
+# path_to_file = r"E:\My Files\2020-07-08 10_40_10-Window.jpg"
+# local_time = creation_date(path_to_file)
 
 
 
 
 
 
-
-
-print(new_list)
 
 
